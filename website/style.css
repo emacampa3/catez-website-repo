@@ -149,7 +149,7 @@ body {
 .parallax-image-1 {
 	position: relative;
 	top: 100px;
-	background-image: url("https://posavje.com/wp-content/uploads/2017/08/poletna_TR.jpg");
+	background-image: url("https://live.staticflickr.com/65535/52115911157_3b8c93c2d2_o.jpg");
 	min-height: 500px;
 	width: 100vw;
 	background-position: top;
@@ -163,7 +163,7 @@ body {
 }
 
 .parallax-image-2 {
-	background-image: url("https://posavje.com/wp-content/uploads/2017/08/poletna_zimska_TR.jpg");
+	background-image: url("https://live.staticflickr.com/65535/52115911117_93ac2e181f_o.jpg");
 	min-height: 450px;
 	width: 100vw;
 	background-position: center;
