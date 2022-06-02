@@ -1,0 +1,1029 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+	--primary-color: #f0f0f0;
+	--secondary-color: #1dbbcb;
+	--dark-color: #444;
+	--gray-color: #f4f4f4;
+	--overlay-color: #01010198;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden; 
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.1rem;
+}
+
+/* general style */
+.container {
+	position: relative;
+	max-width: 1000px;
+	width: 75%;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: center;
+	color: var(--dark-color);
+	line-height: 25px;
+}
+
+.naslov {
+	line-height: 3rem;
+}
+
+/* white top line */
+.nav {
+	position: fixed;
+	height: 100px;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: all 0.2s ease-in-out;
+	background-color: #fff;
+	z-index: 10000;
+}
+
+.nav .container {
+	display: flex;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+	color: var(--dark-color);
+}
+
+.nav.active {
+	box-shadow: 0 0px 10px -1px #00000047;
+}
+
+/* logo image */
+.nav.active img {
+	top: 0.6rem;
+	height: 80px;
+	width: auto;
+	transition: all 0.3s ease-in-out;
+}
+
+.nav img {
+	position: relative;
+	top: 20px;
+	left: 50px;
+	border-radius: 50%;
+	width: auto;
+	height: 200px;
+}
+
+/* POVPRAŠEVANJE button */
+.button {
+	position: fixed;
+	top: 30px;
+	right: 80px;
+	background: transparent;
+	color: #333;
+	padding: 0.8rem 1.5rem;
+	border: 1px solid var(--dark-color);
+	cursor: pointer;
+	font-size: inherit;
+	font-weight: 400;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+.button:hover {
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	background: var(--secondary-color);
+	transition-duration: 0.2s;
+}
+
+.button.active {
+	display: none;
+}
+
+/* general style */
+.section h1 {
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: var(--dark-color);
+	margin: 1.8rem 0 1.5rem 0;
+}
+
+.section p {
+	font-weight: 300;
+	margin-bottom: 1rem;
+}
+
+.section {
+	position: relative;
+}
+
+.section img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100%;
+	max-width: 350px;
+	border-radius: 10px;
+}
+
+.section3 {
+	text-align: center;
+	padding: 1rem;
+	background-color: var(--gray-color);
+}
+
+.container.introduction {
+	margin: 2.5rem 0;
+}
+
+/* parallax images and overlay text */
+.parallax-image-1 {
+	position: relative;
+	top: 100px;
+	background-image: url("https://posavje.com/wp-content/uploads/2017/08/poletna_TR.jpg");
+	min-height: 500px;
+	width: 100vw;
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.parallax-image-1 h1, .parallax-image-1 p {
+	color: var(--primary-color);
+}
+
+.parallax-image-2 {
+	background-image: url("https://posavje.com/wp-content/uploads/2017/08/poletna_zimska_TR.jpg");
+	min-height: 450px;
+	width: 100vw;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.parallax-image-2 p {
+	font-size: 1.3rem;
+}
+
+.overlay {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+	background-color: var(--overlay-color);
+}
+
+.parallax-text {
+	position: relative;
+	top: 0;
+	height: 450px;
+	width: 100%;
+}
+
+.parallax-image-1 .parallax-text {
+	position: relative;
+	top: 7rem;
+	height: 450px;
+	width: 100%;
+}
+
+/* general styling */
+.section3-inner {
+	color: var(--primary-color);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: auto;
+	padding: 3rem;
+}
+
+.section3-inner h2 {
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.section3-inner p {
+	font-size: 1.4rem;
+	margin-top: 1rem;
+}
+
+.section3-inner-2 {
+	color: var(--primary-color);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	margin: auto;
+	padding: 2rem;
+}
+
+.section3-inner-2 h2 {
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
+}
+
+.section3-inner-2 p {
+	font-size: 1.1rem;
+	margin-top: 1rem;
+}
+
+/* pages lily and teddy gallery */
+.images-panel-container {
+	position: relative;
+	width: 70%;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: center;
+}
+
+.images-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90vh;
+	width: auto;
+	overflow: hidden;
+}
+
+.panel {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	flex: 0.5;
+	margin: 10px;
+	transition: all 700ms ease-in;
+}
+
+.panel h3 {
+	font-size: 1rem;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+}
+
+.panel.active {
+	flex: 7;
+}
+
+.panel.active h3 {
+	opacity: 1;
+	color: var(--primary-color);
+	transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* pages general styling */
+.section2.gray {
+	background-color: var(--gray-color);
+}
+
+.section2 .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3rem;
+	text-align: start;
+	align-items: center;
+	padding: 3rem;
+}
+
+.teddy {
+	color: var(--dark-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 6rem;
+}
+
+/* pages links and buttons */
+.pages {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 2.5rem;
+}
+
+#page-teddy {
+	margin-top: 0.7rem;
+	margin-right: 2rem;
+}
+
+#page-lily {
+	margin-top: 0.7rem;
+	padding: 1rem 2.3rem;
+}
+
+.button-pages {
+	position: relative;
+	background: transparent;
+	color: #333;
+	padding: 1rem 1.7rem;
+	border: 1.5px solid var(--dark-color);
+	cursor: pointer;
+	font-size: 1.1rem;
+	font-weight: 500;
+	border-radius: 30px;
+	text-decoration: none;
+}
+
+.button-pages:hover {
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	background: var(--secondary-color);
+	transition-duration: 0.3s;
+}
+
+/* first gallery */
+.gallery {
+	width: 85%;
+	display: flex;
+	flex-flow: row wrap;
+	border: none;
+	max-width: 1200px;
+	margin: 1.5rem auto;
+	background-color: none;
+}
+
+.gallery div {
+	flex: auto;
+	width: 250px;
+	margin: 7px;
+}
+
+.gallery div img {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+/* second gallery */
+.gallery-catez {
+	display: flex;
+	flex-flow: row wrap;
+	width: 85%;
+	border: none;
+	max-width: 1200px;
+	margin: 3rem auto;
+	background-color: none;
+}
+
+.gallery-catez div {
+	flex: auto;
+	width: 250px;
+	margin: 7px;
+}
+
+.gallery-catez div img {
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+/* gray unordered list styling */
+.container-najem {
+	position: relative;
+	min-width: 300px;
+	margin-left: calc(50% - 10rem);
+	text-align: left;
+}
+
+.container-najem ul {
+	margin-left: 15px;
+	list-style-type: circle;
+	line-height: 25px;
+}
+
+/* gray header after nav */
+.container-header {
+	position: relative;
+	max-width: 1000px;
+	width: 40%;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: center;
+}
+
+.header-title p {
+	font-size: 1.25rem;
+	margin-top: 0.8rem;
+}
+
+/* form */
+.form-map {
+  position: relative;
+	background-color: var(--gray-color);
+	border-radius: 0 0 5px 5px;
+}
+
+.map-contact {
+	position: relative;
+	width: 100%;
+}
+
+.form {
+	max-width: 450px;
+}
+
+.map {
+	border-radius: 5px;
+	width: 95%;
+	height: 450px;
+}
+
+.container .form-map {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+	text-align: start;
+	align-items: center;
+	padding: 2rem;
+	margin-bottom: 2rem;
+}
+
+.form-title {
+	margin-top: 2rem;
+	background-color: var(--gray-color);
+	padding-top: 2rem;
+	text-align: left;
+	padding-left: 3.5rem;
+	border-radius: 5px 5px 0 0;
+}
+
+.form-title h1 {
+  margin-top: 0;
+	font-size: 1.5rem;
+}
+
+.form-title h1 p {
+  font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.form p {
+	font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form p::after {
+  content: " *";
+	color: #c55b5b;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea,
+#contact button[type="submit"] {
+	font-family: inherit;
+}
+
+#contact {
+	background: var(--gray-color);
+	padding-left: 25px ;
+  border-radius: 5px;
+}
+
+fieldset {
+	border: none;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+fieldset.sporočilo p::after, fieldset.izbira-hiske p::after {
+	content: "";
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+	width: 100%;
+	border: 1px solid #ccc;
+	background: #ffffff81;
+	margin: 0 0 5px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#contact input[type="text"]::placeholder,
+#contact input[type="email"]::placeholder,
+#contact input[type="tel"]::placeholder,
+#contact textarea::placeholder {
+	color: #d0d0d0;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact textarea:hover {
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid var(--secondary-color);
+}
+
+#contact textarea {
+	height: 140px;
+	max-width: 100%;
+	resize: none;
+}
+
+#contact button[type="submit"] {
+	cursor: pointer;
+	width: 90%;
+	border: 1px solid transparent;
+	background: var(--secondary-color);
+	color: #fff;
+	padding: 1rem;
+	font-size: 1rem;
+	border-radius: 30px;
+}
+
+#contact button[type="submit"]:hover {
+	transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+	border: 1px solid var(--dark-color);
+}
+
+.hiška-gostje {
+	position: relative;
+  display: flex;
+	width: 14.5rem;
+}
+
+.gostje {
+	width: 70%;
+	min-width: 70%;
+}
+
+/* form buttons */
+.col {
+  display: block;
+  float: left;
+	margin-left: 1rem;
+	margin-top: 0.2rem;
+	margin-bottom: 1.5rem;
+}
+
+.col:first-of-type { margin-left: 0; }
+
+.izbira-hiske input {
+	display: none;
+}
+
+.izbira-hiske label {
+	position: relative;
+	color: var(--dark-color);
+	background-color: #fff;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 0.1rem;
+	height: 30px;
+	display: block;
+	cursor: pointer;
+	border: 1px solid #b2b2b2;
+	box-sizing: border-box;
+	padding: 1.2rem 1.5rem;
+	border-radius: 5rem;
+	font-weight: 400;
+}
+
+.izbira-hiske label:hover {
+	color: #fff;
+	border: 1px solid var(--primary-color);
+	background: var(--secondary-color);
+	transition-duration: 0.2s;
+}
+
+.form input:checked + label {
+	border: 1px solid transparent;
+	background-color: var(--secondary-color);
+	color: #fff;
+}
+
+/* date input */
+.prihod-odhod {
+	position: relative;
+  display: flex;
+	width: 14.5rem;
+	margin-bottom: 1.5rem;
+	margin-top: 0;
+}
+
+input[type="date"] {
+	align-items: center;
+	-webkit-align-items: center;
+	font-family: "Montserrat", sans-serif;
+	overflow: hidden;
+	padding: 6px;
+	-webkit-padding-start: 10px;
+	font-weight: 400;
+	font-size: 0.9rem;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	background: #ffffff81;
+	padding: 10px;
+	letter-spacing: 0.5px;
+}
+
+.podatki-martina {
+	margin-top: 2rem;
+}
+
+/* footer */
+.footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10rem;
+	width: 100%;
+	background-color: var(--gray-color);
+	color: var(--dark-color);
+}
+
+.footer p {
+	font-size: 12px;
+}
+
+.footer.pages {
+	height: 5rem;
+	background-color: #fff;
+	color: var(--dark-color);
+	z-index: 100;
+}
+
+.footer.pages p {
+	margin-top: 2rem;
+	font-size: 12px;
+}
+
+.terme-opis {
+	margin: 2rem 0;
+}
+
+.container.last-header {
+	margin: 2.5rem 0;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {  
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* tablet size */
+@media (min-width: 700px) and (max-width: 1200px) {
+  body {
+    font-size: 1rem;
+  }
+	.container {
+		width: 85%;
+	}
+	.nav {
+		transition: all 0.1s ease-in-out;
+	}
+	.nav img {
+		left: 0;
+		height: 170px;
+	}
+	.button {
+		right: 0px;
+		font-size: 0.9rem;
+	}
+	.section h1 {
+		margin: 0.6rem;
+	}
+	.container-header {
+		width: 75%;
+	}
+	.header-title p {
+		font-size: 1.1rem;
+		margin-top: 0.6rem;
+		margin-bottom: 0;
+	}
+	.container.introduction {
+		margin: 1.5rem 0;
+	}
+	.button-pages {
+		border: 1px solid var(--dark-color);
+		font-size: 1rem;
+		padding: 0.7rem 1rem;
+	}
+	#page-lily {
+		padding: 0.7rem 1.6rem;
+	}
+	.container-najem {
+		width: 100%;
+		text-align: left;
+		margin-left: calc(50% - 11rem);
+	}
+	.parallax-image-2 {
+		min-height: 550px;
+	}
+	.parallax-text {
+		height: 550px;
+	}
+	.prihod-odhod {
+		flex-direction: column;
+	}
+	.hiška-gostje {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 14.5rem;
+	}
+	.form-map {
+		display: flex;
+	}
+	.images-panel-container {
+		position: relative;
+		width: 90%;
+		left: 50%;
+		transform: translate(-50%);
+		text-align: center;
+	}
+
+}
+
+/* query for images gallery */
+@media (min-width: 1000px) and (max-width: 1200px) {
+	.images-panel-container {
+		position: relative;
+		width: 90%;
+		left: 50%;
+		transform: translate(-50%);
+		text-align: center;
+	}
+}
+
+/* another query for images gallery */
+@media screen and (max-width: 1000px) {
+	.images-container {
+		display: flex;
+		flex-flow: row wrap;
+		height: auto;
+		margin: 2rem;
+	}
+	.panel {
+		height: 300px;
+		width: 200px;
+		position: relative;
+		flex: auto;
+	}
+	.panel.active {
+		display: none;
+	}
+	.images-panel-container {
+		width: 90%;
+	}
+}
+
+/* phone size */
+@media screen and (max-width: 700px) {
+	body {
+    font-size: 14px;
+  }
+	.container {
+		width: 90%;
+		line-height: 20px;
+	}
+	.nav {
+		position: fixed;
+		height: 60px;
+		top: 0;
+		left: 0;
+		right: 0;
+		transition: all 0.2s ease-in-out;
+	}
+	.nav img {
+		top: 5px;
+		left: 0;
+		height: 120px;
+	}
+	.nav.active img {
+		top: 5px;
+		height: 50px;
+	}
+	.button {
+		top: 13px;
+		right: 0px;
+		padding: 0.3rem 1rem;
+		border: 0.5px solid var(--dark-color);
+		font-size: 12px;
+	}
+	.container .form-map {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 2rem;
+		text-align: start;
+		align-items: center;
+		padding: 2rem;
+		margin-bottom: 3rem;
+	}
+	.map {
+		border-radius: 5px;
+		width: 95%;
+		height: 200px;
+	}
+	.terme-opis {
+		margin: 0;
+	}
+	.section h1 {
+		font-size: 14px;
+		margin: 0.7rem;
+	}
+
+	.section p {
+		font-weight: 300;
+		margin-bottom: 1rem;
+	}
+	.section3-inner {
+		margin: 0;
+		padding: 0;
+	}
+	.section3-inner p {
+		font-size: 1rem;
+		margin-top: 1rem;
+	}
+	.section3-inner h1 {
+		font-size: 1.3rem;
+		margin-top: 0rem;
+	}
+	.parallax-image-1 {
+		top: 70px;
+		min-height: 50px;
+	}
+	.container-header {
+		width: 100%;
+	}
+	.header-title p {
+		font-size: 15px;
+		margin-top: 0.8rem;
+	}
+	.container.introduction {
+		margin: 1rem 0;
+	}
+	.pages {
+		margin-bottom: 1rem;
+		margin-top: -1rem;
+	}
+	#page-teddy {
+		margin-right: 2rem;
+	}
+	#page-lily {
+		padding: 10px 20px;
+	}
+	.button-pages {
+		padding: 10px 14px;
+		border: 0.5px solid var(--dark-color);
+		font-size: 14px;
+		font-weight: 400;
+	}
+	.button-pages:hover {
+		border: 0.5px solid var(--primary-color);
+	}
+	.container-najem ul {
+		line-height: 20px;
+	}
+	.parallax-image-2 {
+		min-height: 630px;
+	}
+	.parallax-text {
+		height: 630px;
+	}
+	.parallax-image-2 p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.section3-inner-2 h2 {
+		font-size: 20px;
+		margin: 0;
+	}
+	.gallery {
+		width: 90%;
+		margin: 1rem auto;
+	}
+	.gallery-catez {
+	width: 90%;
+	margin: 1rem auto;
+	}
+	.container.last-header {
+		margin: 1.5rem 0 0 0;
+	}
+	.form-title {
+		margin-top: 0rem;
+	}
+	.form-title h1 {
+		font-size: 20px;
+		margin-left: -1.5rem;
+	}
+	.form-title h1 p {
+		font-size: 14px;
+	}
+	.form p {
+		font-size: 13px;
+		margin-bottom: 5px;
+	}
+	.prihod-odhod {
+		flex-direction: column;
+	}
+	.hiška-gostje {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 14.5rem;
+	}
+	.gostje {
+		margin-top: -1rem;
+	}
+	.form-map {
+		display: flex;
+	}
+	.container .form-map {
+		padding: 1rem;
+		margin-bottom: 2rem;
+	}
+	.images-panel-container {
+		position: relative;
+		width: 90%;
+		left: 50%;
+		transform: translate(-50%);
+		text-align: center;
+	}
+	fieldset {
+		margin-left: -10px;
+	}
+	#contact button[type="submit"] {
+		cursor: pointer;
+		width: 100%;
+		border: 1px solid transparent;
+		background: var(--secondary-color);
+		color: #fff;
+		padding: 1rem;
+		font-size: 1rem;
+		border-radius: 30px;
+	}
+	.map-contact {
+		margin-left: 8px;
+	}
+	.izbira-hiske label {
+		font-size: 1rem;
+		border: 0.5px solid #b2b2b2;
+		padding: 1.1rem 1.3rem;
+	}
+	.izbira-hiske label:hover {
+		border: 0.5px solid var(--primary-color);
+	}
+	.footer {
+		height: 4rem;
+		width: 100%;
+	}
+	.footer p {
+		font-size: 10px;
+	}
+	.teddy, .lily {
+		margin-top: 8rem;
+		margin-bottom: 0.5rem;
+	}
+	.section2 .container {
+		grid-template-columns: repeat(1, 1fr);
+		padding: 1rem;
+	}
+	.section2 .container img {
+		grid-row: 2;
+		margin-bottom: 1rem;
+		margin-top: -2rem;
+	}
+	.section2 .container h1 {
+		margin-left: 0;
+	}
+	.images-panel-container {
+		width: 100%;
+	}
+}
