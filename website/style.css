@@ -241,7 +241,7 @@ body {
 	margin-top: 1rem;
 }
 
-/* pages lily and teddy gallery */
+/* pages lili and teddy gallery */
 .images-panel-container {
 	position: relative;
 	width: 70%;
@@ -327,7 +327,7 @@ body {
 	margin-right: 2rem;
 }
 
-#page-lily {
+#page-lili {
 	margin-top: 0.7rem;
 	padding: 1rem 2.3rem;
 }
@@ -735,7 +735,7 @@ input[type="date"] {
 		font-size: 1rem;
 		padding: 0.7rem 1rem;
 	}
-	#page-lily {
+	#page-lili {
 		padding: 0.7rem 1.6rem;
 	}
 	.container-najem {
@@ -896,7 +896,7 @@ input[type="date"] {
 	#page-teddy {
 		margin-right: 2rem;
 	}
-	#page-lily {
+	#page-lili {
 		padding: 10px 20px;
 	}
 	.button-pages {
@@ -1007,7 +1007,7 @@ input[type="date"] {
 	.footer p {
 		font-size: 10px;
 	}
-	.teddy, .lily {
+	.teddy, .lili {
 		margin-top: 8rem;
 		margin-bottom: 0.5rem;
 	}
