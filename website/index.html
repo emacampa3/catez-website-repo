@@ -156,22 +156,22 @@
 			</div>
 			<div class="form-map">
 				<div class="form">
-					<form id="contact" action="" method="post">
+					<form id="contact">
 						<fieldset>
 							<p>Ime in priimek</p>
-							<input placeholder="Ime" type="text" tabindex="1" required>
+							<input placeholder="Ime" id="guestName" value="" name="guestName" type="text" tabindex="1" required>
 						</fieldset>
 						<fieldset>
 							<p>Vaš e-mail naslov</p>
-							<input placeholder="E-mail naslov" type="email" tabindex="2" required>
+							<input placeholder="E-mail naslov" id="guestEmail" type="email" tabindex="2" required>
 						</fieldset>
 						<fieldset>
 							<p>Vaša telefonska številka</p>
-							<input placeholder="Telefonska številka" type="tel" tabindex="3" required>
+							<input placeholder="Telefonska številka" id="guestPhoneNumber" type="tel" tabindex="3" required>
 						</fieldset>
 						<fieldset class="sporočilo">
 							<p>Vaše sporočilo / vprašanje</p>
-							<textarea placeholder="Sporočilo" tabindex="4"></textarea>
+							<textarea placeholder="Sporočilo" id="guestDescription" tabindex="4"></textarea>
 						</fieldset>
 						<div class="hiška-gostje"><fieldset class="izbira-hiske">
 							<p>Hiška</p>
@@ -180,15 +180,15 @@
 						</fieldset>
 						<fieldset class="gostje">
 							<p>Število gostov</p>
-							<input placeholder="Število gostov" type="text" required>
+							<input placeholder="Število gostov" id="guestNumber" type="text" required>
 						</fieldset></div>
 						<div class="prihod-odhod"><fieldset class="prihod">
 							<p>Datum prihoda</p>
-							<input type="date" required>
+							<input type="date" id="guestArrival" required>
 						</fieldset>
 						<fieldset class="odhod">
 							<p>Datum odhoda</p>
-							<input type="date" required>
+							<input type="date" id="guestLeave" required>
 						</fieldset></div>
 						<fieldset>
 							<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Oddaja povpraševanja</button>
@@ -201,9 +201,9 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="footer"><p>APARTMENTS ČATEŽ &#169 ALL RIGHTS RESERVED</p></div>
-		
+
 		<script src="script.js"></script>
 	</body>
 </html>
