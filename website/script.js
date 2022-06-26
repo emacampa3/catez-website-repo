@@ -38,8 +38,6 @@ function formHandler(e) {
 	const guestEmail = document.getElementById("guestEmail").value
 	const guestPhoneNumber = document.getElementById("guestPhoneNumber").value
 	const guestDescription = document.getElementById("guestDescription").value
-	// const guestHouse1 = document.getElementById("teddy").value
-	// const guestHouse2 = document.getElementById("lili").value
 	const guestHouses = document.querySelectorAll("input[name='guestHouse']")
 	const guestNumber = document.getElementById("guestNumber").value
 	const guestArrivalDate = document.getElementById("guestArrival").value
@@ -59,8 +57,6 @@ function formHandler(e) {
 		guestEmail,
 		guestPhoneNumber,
 		guestDescription,
-		// guestHouse1,
-		// guestHouse2,
 		selectedGuestHouse,
 		guestNumber,
 		guestArrivalDate,
@@ -68,6 +64,20 @@ function formHandler(e) {
 	}
 
 	console.log(data)
+
+	fetch("https://catez-contact-be-default-rtdb.europe-west1.firebasedatabase.app/reservations.json", {
+		method: "POST",
+		headers: {
+			"Content-type": "application/json"
+		},
+		body: JSON.stringify(data)
+	})
+	.then((res) => {
+		return res
+	})
+	.catch((err) => {
+		return err
+	})
 }
 
 form.addEventListener("submit", formHandler)
