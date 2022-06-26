@@ -38,19 +38,30 @@ function formHandler(e) {
 	const guestEmail = document.getElementById("guestEmail").value
 	const guestPhoneNumber = document.getElementById("guestPhoneNumber").value
 	const guestDescription = document.getElementById("guestDescription").value
-	const guestHouse1 = document.getElementById("teddy").value
-	const guestHouse2 = document.getElementById("lili").value
+	// const guestHouse1 = document.getElementById("teddy").value
+	// const guestHouse2 = document.getElementById("lili").value
+	const guestHouses = document.querySelectorAll("input[name='guestHouse']")
 	const guestNumber = document.getElementById("guestNumber").value
 	const guestArrivalDate = document.getElementById("guestArrival").value
 	const guestLeaveDate = document.getElementById("guestLeave").value
+
+	let selectedGuestHouse
+
+	for (const guestHouse of guestHouses) {
+		if (guestHouse.checked) {
+			selectedGuestHouse = guestHouse.value
+			break
+		}
+	}
 
 	const data = {
 		guestName,
 		guestEmail,
 		guestPhoneNumber,
 		guestDescription,
-		guestHouse1,
-		guestHouse2,
+		// guestHouse1,
+		// guestHouse2,
+		selectedGuestHouse,
 		guestNumber,
 		guestArrivalDate,
 		guestLeaveDate
