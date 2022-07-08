@@ -877,8 +877,7 @@ input[type="date"] {
 	}
 	.parallax-image-1 {
 		top: 70px;
-		width: 100%;
-		height: auto;
+		background-image: url("https://live.staticflickr.com/65535/52201853536_99945e1533_b.jpg");
 	}
 	.container-header {
 		width: 100%;
@@ -913,8 +912,7 @@ input[type="date"] {
 		line-height: 20px;
 	}
 	.parallax-image-2 {
-		width: 100%;
-		height: auto;
+		background-image: url("https://live.staticflickr.com/65535/52200853112_d9839fa458_b.jpg");
 	}
 	/* .parallax-image-1 {
 	top: 100px;
