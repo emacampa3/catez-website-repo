@@ -150,8 +150,9 @@ body {
 	position: relative;
 	top: 100px;
 	background-image: url("https://live.staticflickr.com/65535/52115911157_3b8c93c2d2_o.jpg");
-	min-height: 500px;
-	width: 100%;
+	/* min-height: 500px;
+	width: 100%; */
+	background-size: auto;
 	background-position: top;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -190,6 +191,7 @@ body {
 	top: 0;
 	height: 450px;
 	width: 100%;
+	background-attachment: scroll;
 }
 
 .parallax-image-1 .parallax-text {
