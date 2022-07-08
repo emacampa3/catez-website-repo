@@ -150,10 +150,9 @@ body {
 	position: relative;
 	top: 100px;
 	background-image: url("https://live.staticflickr.com/65535/52115911157_3b8c93c2d2_o.jpg");
-	/* min-height: 500px;
-	width: 100%; */
-	background-size: auto;
-	background-position: top;
+	min-height: 500px;
+	width: 100%;
+	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -881,6 +880,7 @@ input[type="date"] {
 		top: 70px;
 		background-image: url("https://live.staticflickr.com/65535/52201853536_99945e1533_b.jpg");
 		min-height: 100px;
+		background-attachment: scroll;
 	}
 	.container-header {
 		width: 100%;
@@ -917,6 +917,7 @@ input[type="date"] {
 	.parallax-image-2 {
 		min-height: 150px;
 		background-image: url("https://live.staticflickr.com/65535/52200853112_d9839fa458_b.jpg");
+		background-attachment: scroll;
 	}
 	.parallax-text {
 		height: 630px;
