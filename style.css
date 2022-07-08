@@ -744,8 +744,12 @@ input[type="date"] {
 		text-align: left;
 		margin-left: calc(50% - 11rem);
 	}
+	.parallax-image-1 {
+		background-attachment: scroll;
+	}
 	.parallax-image-2 {
 		min-height: 550px;
+		background-attachment: scroll;
 	}
 	.parallax-text {
 		height: 550px;
@@ -769,7 +773,6 @@ input[type="date"] {
 		transform: translate(-50%);
 		text-align: center;
 	}
-
 }
 
 /* query for images gallery */
@@ -878,7 +881,6 @@ input[type="date"] {
 	}
 	.parallax-image-1 {
 		top: 70px;
-		background-image: url("https://live.staticflickr.com/65535/52201853536_99945e1533_b.jpg");
 		min-height: 100px;
 		background-attachment: scroll;
 	}
@@ -916,7 +918,6 @@ input[type="date"] {
 	}
 	.parallax-image-2 {
 		min-height: 150px;
-		background-image: url("https://live.staticflickr.com/65535/52200853112_d9839fa458_b.jpg");
 		background-attachment: scroll;
 	}
 	.parallax-text {
