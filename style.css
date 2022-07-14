@@ -110,7 +110,7 @@ body {
 }
 
 /* general style */
-.section h1 {
+.section h2 {
 	font-size: 1.3rem;
 	font-weight: 600;
 	color: var(--dark-color);
@@ -471,12 +471,12 @@ body {
 	border-radius: 5px 5px 0 0;
 }
 
-.form-title h1 {
+.form-title h2 {
   margin-top: 0;
 	font-size: 1.5rem;
 }
 
-.form-title h1 p {
+.form-title h2 p {
   font-size: 1.2rem;
 	font-weight: 400;
 }
@@ -717,7 +717,7 @@ input[type="date"] {
 		right: 0px;
 		font-size: 0.9rem;
 	}
-	.section h1 {
+	.section h2 {
 		margin: 0.6rem;
 	}
 	.container-header {
@@ -858,7 +858,7 @@ input[type="date"] {
 	.terme-opis {
 		margin: 0;
 	}
-	.section h1 {
+	.section h2 {
 		font-size: 14px;
 		margin: 0.7rem;
 	}
@@ -875,7 +875,7 @@ input[type="date"] {
 		font-size: 1rem;
 		margin-top: 1rem;
 	}
-	.section3-inner h1 {
+	.section3-inner h2 {
 		font-size: 1.3rem;
 		margin-top: 0rem;
 	}
@@ -945,11 +945,11 @@ input[type="date"] {
 	.form-title {
 		margin-top: 0rem;
 	}
-	.form-title h1 {
+	.form-title h2 {
 		font-size: 20px;
 		margin-left: -1.5rem;
 	}
-	.form-title h1 p {
+	.form-title h2 p {
 		font-size: 14px;
 	}
 	.form p {
@@ -1026,7 +1026,7 @@ input[type="date"] {
 		margin-bottom: 1rem;
 		margin-top: -2rem;
 	}
-	.section2 .container h1 {
+	.section2 .container h2 {
 		margin-left: 0;
 	}
 	.images-panel-container {
