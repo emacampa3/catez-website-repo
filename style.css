@@ -39,7 +39,7 @@ body {
 }
 
 .naslov {
-	line-height: 3rem;
+	line-height: 1.5rem;
 }
 
 /* white top line */
@@ -850,6 +850,9 @@ input[type="date"] {
 		padding: 2rem;
 		margin-bottom: 3rem;
 	}
+	.naslov {
+		line-height: normal;
+	}
 	.map {
 		border-radius: 5px;
 		width: 95%;
@@ -862,7 +865,6 @@ input[type="date"] {
 		font-size: 14px;
 		margin: 0.7rem;
 	}
-
 	.section p {
 		font-weight: 300;
 		margin-bottom: 1rem;
