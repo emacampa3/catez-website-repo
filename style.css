@@ -149,7 +149,7 @@ body {
 .parallax-image-1 {
 	position: relative;
 	top: 100px;
-	background-image: url("https://live.staticflickr.com/65535/52115911157_3b8c93c2d2_o.jpg");
+	background-image: url("https://live.staticflickr.com/65535/52269702145_ab30a25d31_z.jpg");
 	min-height: 500px;
 	width: 100%;
 	background-position: bottom;
@@ -163,7 +163,7 @@ body {
 }
 
 .parallax-image-2 {
-	background-image: url("https://live.staticflickr.com/65535/52115911117_93ac2e181f_o.jpg");
+	background-image: url("https://live.staticflickr.com/65535/52268251707_6dbf6597be_z.jpg");
 	min-height: 450px;
 	width: 100vw;
 	background-position: center;
